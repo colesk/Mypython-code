@@ -4,12 +4,6 @@
 # http://www.apache.org/licenses/LICENSE-2.0
 
 
-##########################################
-##
-##  Author: Sravanthi Kandukuri 
-##
-###########################################
-
 
 # Google's Python Class
 # http://code.google.com/edu/languages/google-python-class/
