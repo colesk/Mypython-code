@@ -67,50 +67,12 @@ def extract_names(filename):
 
       print ('output':output)'''
     
-  tuples=re.split(r'<td>.*</td>',text)
+  tuples=re.findall(r'<td>(\d+)</td><td>(\w+)</td><td>(\w+)</td>',text)
 
   print('tuples',tuples)
       
-  '''name_to_rank={}
-      
-  for rank_tuple in tuples:
-    (rank,boyname,girlname)=rank_tuple
-    if boy_name not in name_of_rank:
-      names_to_rank[boyname]=rank
-    if girl_name not in name_of_rank:
-      names_to_rank[girlname]=rank
-    print(' name_to_rank :', name_to_rank)
-    sorted_names= sorted(name_to_rank.keys())
-    for name in sorted_names:
-      names.append(name + " " + name_to_rank[name])
-
-
-    return names'''
-
-      
-      '''
-        #extract_name=re.search(r'<td>.+<\td>',line)
-        #if extract_name:
-        #print('in extract_name')
-        rank_female_male=match.group()
-        #print('names:',rank_female_male)
-        list=rank_female_male.split('</td>')
-        #print('list:',list)
-        for k in list:
-          rank=re.search(r'\d+',k)
-          if rank:
-            key=rank.group()
-            #print('key:',key)
-           
-          else:
-            name=re.search(r'\w+$',k)
-            if name:
-              #print('checking digit',name.group())
-               value=name.group()
-               name_rank[value]=key'''
-
-  
- # print('pair of names and ranks', name_rank)
+   
+  #print('pair of names and ranks', name_rank)
   return
 
 

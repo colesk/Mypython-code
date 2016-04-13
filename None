@@ -1,0 +1,26 @@
+#####################################
+### List.py                        ##
+# Author : sravanthi kandukuri     ##
+#                                  ##
+#####################################
+
+
+# Given a list of strings, return the count of the number of
+# strings where the string length is 2 or more and the first
+# and last chars of the string are the same.
+# Note: python does not have a ++ operator, but += works.
+def match_ends(words):
+    print ( 'Match_ends')
+    return ( len(s) for s in words if s.len()>=2 and s[1] ==s[-1]))
+
+
+ # B. front_x
+# Given a list of strings, return a list with the strings
+# in sorted order, except group all the strings that begin with 'x' first.
+# e.g. ['mix', 'xyz', 'apple', 'xanadu', 'aardvark'] yields
+# ['xanadu', 'xyz', 'aardvark', 'apple', 'mix']
+# Hint: this can be done by making 2 lists and sorting each of them
+# before combining them.
+def front_x(words):
+  # +++your code here+++
+  return
